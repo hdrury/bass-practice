@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bass Sight Reading Practice</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+  </head>
+  <body>
+	<section class="section">
+		<div class="container">
+		<h1 class="title">
+			Sight Reading Practice - Bass
+		</h1>
+
+		<div id="buttons" class="is-inline">
+			<button id="1" class="button strings">E String</button>
+			<button id="2" class="button strings">A String</button>
+			<button id="3" class="button strings">D String</button>
+			<button id="4" class="button strings">G String</button>
+			<button id="5" class="button strings">All Strings</button>
+			&nbsp;&nbsp;
+			<button id="6" class="button notes is-info">Whole Notes</button>
+			<button id="7" class="button notes">Half Notes</button>
+			<button id="8" class="button notes">Quarter Notes</button>
+		</div>
+
+		<div id="bass"></div>
+	
+		</div>
+	</section>
+
+    <script src="https://unpkg.com/vexflow/releases/vexflow-min.js"></script>
+    <script src="./notes-for-bass.js"></script>
+	<script src="./ui-actions.js"></script>
+	
+	<script>
+
+		// set autoscroll
+		// setInterval(function(){ window.scrollBy(0,1); }, 50);
+	
+		const el = document.getElementById("buttons");
+		el.addEventListener("click", showStringNotes, false);
+	
+	</script>
+</body>
+</html>
